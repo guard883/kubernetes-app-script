@@ -1,5 +1,5 @@
 FROM openjdk:17.0.2
 WORKDIR /usr/src/myapp
-COPY build/libs/app.jar /usr/src/myapp/app.jar
+COPY ./app.jar /usr/src/myapp/app.jar
 ENTRYPOINT ["java","-jar", "/usr/src/myapp/app.jar"]
 EXPOSE 8080
